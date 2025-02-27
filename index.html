@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Comments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add Comment Button -->
+        <div class="add-comment-btn" id="addCommentBtn">Add a comment</div>
+        
+        <!-- Comment Popup -->
+        <div class="comment-popup" id="commentPopup">
+            <textarea class="comment-input" id="commentInput" placeholder="Add a comment"></textarea>
+            <input type="text" class="username-input" id="usernameInput" placeholder="User Name">
+            <div class="buttons">
+                <button class="cancel-btn" id="cancelBtn">Cancel</button>
+                <button class="comment-btn" id="submitCommentBtn">Comment</button>
+            </div>
+        </div>
+        
+        <!-- Comments List -->
+        <div class="comments-list" id="commentsList">
+            <!-- Comments will be added here dynamically -->
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
