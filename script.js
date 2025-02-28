@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (commentText) {
             // Get current date and time
             const now = new Date();
-            const dateString = `Tue Feb ${now.getDate()} ${now.getFullYear()}`;
+            const dateString = `${now.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }).replaceAll(',', '')}`;
+            
             
             // Create comment element
             const commentElement = createCommentElement(username, dateString, commentText);
